@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { TruncatePipe } from './truncate.pipe';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
-import { TryComponent } from './try/try.component';
 import { ChangeCocolrDirective } from './change-cocolr.directive';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { ChangeCocolrDirective } from './change-cocolr.directive';
     TruncatePipe,
     ChildComponent,
     ParentComponent,
-    TryComponent,
     ChangeCocolrDirective
   ],
   imports: [
