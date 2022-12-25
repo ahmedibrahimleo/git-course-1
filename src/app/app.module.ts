@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TruncatePipe } from './truncate.pipe';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { TryComponent } from './try/try.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TruncatePipe,
     ChildComponent,
-    ParentComponent
+    ParentComponent,
+    TryComponent
   ],
   imports: [
     BrowserModule,
