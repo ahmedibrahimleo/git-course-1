@@ -1,0 +1,60 @@
+import { Component, Input, OnInit, DoCheck,OnChanges, ChangeDetectionStrategy, SimpleChanges, AfterViewInit, ViewChild, AfterContentInit, AfterContentChecked, AfterViewChecked, OnDestroy } from '@angular/core';
+import { observable, Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.css']
+})
+export class ChildComponent implements OnChanges,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy {
+
+@Input()value:string='life cycle in process'
+constructor(){
+  console.log("constructor called")
+
+}
+ 
+ 
+ 
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('onchanges called')
+    console.log(changes)
+  }
+ 
+
+  ngOnInit(): void {
+
+     console.log("oninit called")
+     
+  }
+  ngDoCheck(): void {
+    console.log("checked for changes")
+  }
+  ngAfterContentInit(): void {
+    console.log("checked for content projected initialization")
+  }
+  ngAfterContentChecked(): void {
+    console.log("checked for content projected every change detection")
+  }
+ 
+  ngAfterViewInit(): void {
+    console.log("the initial view")
+  }
+  ngAfterViewChecked(): void {
+    console.log("the view has changed")
+  }
+  ngOnDestroy(): void {
+    console.log("the component destroyed")
+
+  }
+ 
+ 
+
+
+
+
+
+
+
+
+}

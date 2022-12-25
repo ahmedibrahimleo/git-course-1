@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang-practise';
+  data = "This is an example component of two way data binding.";
+
 }
