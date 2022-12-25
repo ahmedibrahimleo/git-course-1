@@ -24,7 +24,7 @@ constructor(){
 
   ngOnInit(): void {
 
-     console.log("oninit called")
+     console.log("oninit called only once ")
      
   }
   ngDoCheck(): void {
