@@ -8,6 +8,7 @@ import { TruncatePipe } from './truncate.pipe';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { TryComponent } from './try/try.component';
+import { ChangeCocolrDirective } from './change-cocolr.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TryComponent } from './try/try.component';
     TruncatePipe,
     ChildComponent,
     ParentComponent,
-    TryComponent
+    TryComponent,
+    ChangeCocolrDirective
   ],
   imports: [
     BrowserModule,
